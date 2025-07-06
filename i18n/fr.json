@@ -1,0 +1,111 @@
+{
+  "common": {
+    "brand": "PareBrise Genève Pro",
+    "phone": "078 999 99 99",
+    "emergency": "Urgence 24/7",
+    "quote": "Devis gratuit",
+    "book": "Réserver",
+    "contact": "Contact",
+    "services": "Services",
+    "about": "À propos",
+    "warranty": "Garantie à vie",
+    "certified": "Certifié",
+    "swiss_made": "Qualité suisse"
+  },
+  
+  "hero": {
+    "title": "Remplacement et Réparation de Pare-brise à Genève - Intervention Express",
+    "subtitle": "N°1 du pare-brise à Genève • Calibrage ADAS certifié • Garantie à vie",
+    "cta_primary": "Devis WhatsApp Immédiat",
+    "cta_secondary": "Réserver en 30 secondes",
+    "trust_rating": "4.9/5 (847 avis)",
+    "trust_interventions": "+15 000 interventions",
+    "trust_speed": "Intervention sous 2h"
+  },
+  
+  "services": {
+    "title": "Nos Services Pare-brise & Vitrage Auto",
+    "windshield_replacement": {
+      "name": "Remplacement Pare-brise",
+      "description": "Changement complet avec calibrage ADAS inclus",
+      "price": "Dès 280 CHF*",
+      "duration": "2 heures",
+      "warranty": "Garantie à vie"
+    },
+    "chip_repair": {
+      "name": "Réparation Impact",
+      "description": "Réparation invisible en 30 minutes",
+      "price": "Dès 89 CHF",
+      "duration": "30 minutes",
+      "warranty": "Garantie 2 ans"
+    },
+    "adas_calibration": {
+      "name": "Calibrage Caméra ADAS",
+      "description": "Recalibrage certifié toutes marques",
+      "price": "Dès 180 CHF",
+      "duration": "45 minutes",
+      "warranty": "Certification constructeur"
+    },
+    "headlight_restoration": {
+      "name": "Rénovation Phares",
+      "description": "Polissage professionnel garantie 3 ans",
+      "price": "Dès 120 CHF",
+      "duration": "1 heure",
+      "warranty": "Garantie 3 ans"
+    }
+  },
+  
+  "booking": {
+    "title": "Réserver en 30 secondes",
+    "select_date": "Choisir une date",
+    "select_time": "Choisir un créneau",
+    "next_available": "Prochain créneau disponible",
+    "confirm": "Confirmer la réservation",
+    "success_title": "Réservation confirmée !",
+    "success_message": "Nous vous avons envoyé un SMS de confirmation.",
+    "error_message": "Une erreur est survenue. Veuillez réessayer."
+  },
+  
+  "calculator": {
+    "title": "Calculateur de prix instantané",
+    "select_brand": "Sélectionnez la marque",
+    "select_model": "Sélectionnez le modèle",
+    "select_service": "Type de service",
+    "instant_quote": "Votre prix",
+    "savings": "Économisez {amount} CHF vs concurrence",
+    "request_quote": "Demander ce devis"
+  },
+  
+  "testimonials": {
+    "title": "Ils Nous Font Confiance à Genève",
+    "see_all": "Voir tous les avis"
+  },
+  
+  "faq": {
+    "title": "Questions Fréquentes",
+    "q1": "Combien coûte un remplacement de pare-brise à Genève ?",
+    "a1": "Le prix varie entre 280 et 800 CHF selon le modèle du véhicule et les options. Le calibrage ADAS ajoute environ 180 CHF. Nous offrons un devis gratuit et précis en 2 minutes.",
+    "q2": "L'assurance couvre-t-elle le pare-brise ?",
+    "a2": "Oui, avec une assurance casco partielle ou complète. La franchise est généralement de 100-300 CHF. Nous gérons toutes les démarches administratives avec votre assurance.",
+    "q3": "Puis-je conduire immédiatement après le remplacement ?",
+    "a3": "Il faut attendre minimum 1 heure après la pose, idéalement 3 heures pour une sécurité optimale. Nous vous fournirons toutes les instructions nécessaires."
+  },
+  
+  "footer": {
+    "address": "Rue du Stand 60, 1204 Genève",
+    "email": "contact@parebrise-geneve-pro.ch",
+    "business_hours": "Lun-Ven: 7h-19h, Sam: 8h-17h, Dim: 9h-17h",
+    "emergency_available": "Service d'urgence disponible 24/7",
+    "legal_links": {
+      "privacy": "Confidentialité",
+      "terms": "Mentions légales",
+      "cookies": "Cookies"
+    }
+  },
+  
+  "meta": {
+    "title_template": "{page} | PareBrise Genève Pro",
+    "description_home": "Spécialiste n°1 du remplacement et réparation de pare-brise à Genève. ✓ Intervention 2h ✓ Calibrage ADAS certifié ✓ Garantie à vie. Devis gratuit immédiat.",
+    "keywords": "pare-brise genève, remplacement pare-brise, réparation impact, calibrage adas, vitrage auto genève"
+  }
+} 

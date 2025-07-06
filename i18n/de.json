@@ -1,0 +1,111 @@
+{
+  "common": {
+    "brand": "PareBrise Genf Pro",
+    "phone": "078 999 99 99",
+    "emergency": "Notdienst 24/7",
+    "quote": "Gratis Offerte",
+    "book": "Termin buchen",
+    "contact": "Kontakt",
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "warranty": "Lebenslange Garantie",
+    "certified": "Zertifiziert",
+    "swiss_made": "Schweizer Qualität"
+  },
+  
+  "hero": {
+    "title": "Windschutzscheiben-Austausch und Reparatur in Genf - Express-Service",
+    "subtitle": "Nr. 1 für Windschutzscheiben in Genf • Zertifizierte ADAS-Kalibrierung • Lebenslange Garantie",
+    "cta_primary": "Sofort WhatsApp-Offerte",
+    "cta_secondary": "In 30 Sekunden buchen",
+    "trust_rating": "4.9/5 (847 Bewertungen)",
+    "trust_interventions": "+15'000 Einsätze",
+    "trust_speed": "Einsatz innerhalb 2 Stunden"
+  },
+  
+  "services": {
+    "title": "Unsere Windschutzscheiben- & Autoglas-Services",
+    "windshield_replacement": {
+      "name": "Windschutzscheiben-Austausch",
+      "description": "Komplettaustausch mit ADAS-Kalibrierung inklusive",
+      "price": "Ab CHF 280*",
+      "duration": "2 Stunden",
+      "warranty": "Lebenslange Garantie"
+    },
+    "chip_repair": {
+      "name": "Steinschlag-Reparatur",
+      "description": "Unsichtbare Reparatur in 30 Minuten",
+      "price": "Ab CHF 89",
+      "duration": "30 Minuten",
+      "warranty": "2 Jahre Garantie"
+    },
+    "adas_calibration": {
+      "name": "ADAS-Kamera-Kalibrierung",
+      "description": "Zertifizierte Neukalibrierung aller Marken",
+      "price": "Ab CHF 180",
+      "duration": "45 Minuten",
+      "warranty": "Hersteller-Zertifizierung"
+    },
+    "headlight_restoration": {
+      "name": "Scheinwerfer-Aufbereitung",
+      "description": "Professionelle Politur mit 3 Jahren Garantie",
+      "price": "Ab CHF 120",
+      "duration": "1 Stunde",
+      "warranty": "3 Jahre Garantie"
+    }
+  },
+  
+  "booking": {
+    "title": "In 30 Sekunden buchen",
+    "select_date": "Datum wählen",
+    "select_time": "Zeitfenster wählen",
+    "next_available": "Nächster verfügbarer Termin",
+    "confirm": "Buchung bestätigen",
+    "success_title": "Buchung bestätigt!",
+    "success_message": "Wir haben Ihnen eine SMS-Bestätigung gesendet.",
+    "error_message": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  
+  "calculator": {
+    "title": "Sofort-Preisrechner",
+    "select_brand": "Marke wählen",
+    "select_model": "Modell wählen",
+    "select_service": "Service-Typ",
+    "instant_quote": "Ihr Preis",
+    "savings": "Sie sparen CHF {amount} vs Mitbewerber",
+    "request_quote": "Diese Offerte anfordern"
+  },
+  
+  "testimonials": {
+    "title": "Vertrauen der Genfer Bevölkerung",
+    "see_all": "Alle Bewertungen ansehen"
+  },
+  
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": "Was kostet ein Windschutzscheiben-Austausch in Genf?",
+    "a1": "Die Preise liegen zwischen CHF 280 und 800, je nach Fahrzeugmodell und Optionen. Die ADAS-Kalibrierung kostet zusätzlich etwa CHF 180. Wir erstellen kostenlose, genaue Offerten in 2 Minuten.",
+    "q2": "Übernimmt die Versicherung den Windschutzscheiben-Austausch?",
+    "a2": "Ja, mit Teil- oder Vollkasko-Versicherung. Der Selbstbehalt beträgt normalerweise CHF 100-300. Wir übernehmen alle administrativen Schritte mit Ihrer Versicherung.",
+    "q3": "Kann ich sofort nach dem Austausch fahren?",
+    "a3": "Sie sollten mindestens 1 Stunde nach der Installation warten, idealerweise 3 Stunden für optimale Sicherheit. Wir geben Ihnen alle notwendigen Anweisungen."
+  },
+  
+  "footer": {
+    "address": "Rue du Stand 60, 1204 Genf",
+    "email": "contact@parebrise-geneve-pro.ch",
+    "business_hours": "Mo-Fr: 7-19 Uhr, Sa: 8-17 Uhr, So: 9-17 Uhr",
+    "emergency_available": "24/7 Notdienst verfügbar",
+    "legal_links": {
+      "privacy": "Datenschutz",
+      "terms": "Impressum",
+      "cookies": "Cookies"
+    }
+  },
+  
+  "meta": {
+    "title_template": "{page} | PareBrise Genf Pro",
+    "description_home": "Nr. 1 Spezialist für Windschutzscheiben-Austausch und Reparatur in Genf. ✓ 2-Stunden-Service ✓ Zertifizierte ADAS-Kalibrierung ✓ Lebenslange Garantie. Gratis Sofort-Offerte.",
+    "keywords": "windschutzscheibe genf, windschutzscheiben austausch, steinschlag reparatur, adas kalibrierung, autoglas genf"
+  }
+} 

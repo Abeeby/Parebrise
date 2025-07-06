@@ -1,0 +1,177 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Enum pour les marques supportées
+enum Brand {
+  AUDI
+  BMW
+  MERCEDES
+  VOLKSWAGEN
+  TESLA
+  PORSCHE
+  ALFAROMEO
+  TOYOTA
+  VOLVO
+  SUZUKI
+  SUBARU
+  LEXUS
+}
+
+// Enum pour les types de service
+enum ServiceType {
+  REPLACEMENT
+  REPAIR
+  ADAS
+  HEADLIGHT
+}
+
+// Pages locales (zones d'intervention)
+model LocalPage {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  name            String
+  locale          String   @default("fr")
+  metaTitle       String
+  metaDescription String
+  content         String   @db.Text // Contenu MDX
+  coordinates     Json     // { lat: number, lng: number }
+  featuredImage   String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([slug, locale])
+}
+
+// Services proposés
+model Service {
+  id               String   @id @default(cuid())
+  slug             String   @unique
+  name             String
+  shortDescription String
+  icon             String
+  basePrice        Float
+  locale           String   @default("fr")
+  order            Int      @default(0)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([slug, locale])
+}
+
+// FAQ
+model FAQ {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String   @db.Text
+  category  String   // pricing, insurance, service, warranty
+  locale    String   @default("fr")
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([category, locale])
+}
+
+// Témoignages clients
+model Testimonial {
+  id           String   @id @default(cuid())
+  author       String
+  location     String
+  rating       Int      // 1-5
+  date         DateTime
+  content      String   @db.Text
+  serviceType  String   // repair, replacement, adas, headlight
+  vehicleBrand String?
+  locale       String   @default("fr")
+  featured     Boolean  @default(false)
+  verified     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([locale, featured])
+}
+
+// Statistiques affichées sur le site
+model Stat {
+  id        String   @id @default(cuid())
+  key       String   @unique // total_interventions, average_rating, etc.
+  value     Float
+  label     String
+  locale    String   @default("fr")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([key, locale])
+}
+
+// Configuration des prix par marque/modèle
+model PriceConfig {
+  id          String      @id @default(cuid())
+  brand       Brand
+  model       String
+  serviceType ServiceType
+  price       Float
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@unique([brand, model, serviceType])
+  @@index([brand, model])
+}
+
+// Logs des calculs de prix (pour analytics)
+model PriceCalculation {
+  id           String   @id @default(cuid())
+  brand        String
+  model        String
+  serviceType  String
+  hasADAS      Boolean  @default(false)
+  isUrgent     Boolean  @default(false)
+  basePrice    Float
+  finalPrice   Float
+  savings      Float
+  postalCode   String?
+  userAgent    String?
+  ipAddress    String?
+  sessionId    String?
+  createdAt    DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([brand, model])
+}
+
+// Demandes de devis
+model QuoteRequest {
+  id             String   @id @default(cuid())
+  firstName      String
+  lastName       String
+  email          String
+  phone          String
+  vehicleBrand   String
+  vehicleModel   String
+  vehicleYear    Int?
+  serviceType    String
+  description    String?  @db.Text
+  photos         Json?    // URLs des photos uploadées
+  preferredDate  DateTime?
+  preferredTime  String?  // morning, afternoon, evening
+  postalCode     String
+  address        String?
+  status         String   @default("pending") // pending, contacted, scheduled, completed, cancelled
+  calculatedPrice Float?
+  finalPrice     Float?
+  notes          String?  @db.Text // Notes internes
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([status, createdAt])
+  @@index([email])
+} 

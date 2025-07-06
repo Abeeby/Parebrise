@@ -1,0 +1,291 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AutoRepair",
+      "@id": "https://parebrise-geneve-pro.ch/#business",
+      "name": "PareBrise Genève Pro",
+      "alternateName": "PGP - Pare-brise Genève",
+      "image": [
+        "https://parebrise-geneve-pro.ch/images/logo.png",
+        "https://parebrise-geneve-pro.ch/images/atelier-geneve.jpg",
+        "https://parebrise-geneve-pro.ch/images/equipe-experts.jpg"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://parebrise-geneve-pro.ch/logo.png",
+        "width": 600,
+        "height": 300
+      },
+      "url": "https://parebrise-geneve-pro.ch",
+      "telephone": "+41789999999",
+      "priceRange": "CHF 89-999",
+      "description": "Spécialiste n°1 du remplacement et de la réparation de pare-brise à Genève. Service d'urgence 24/7, calibrage ADAS certifié, garantie à vie.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue du Stand 60",
+        "addressLocality": "Genève",
+        "addressRegion": "GE",
+        "postalCode": "1204",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.2050242,
+        "longitude": 6.1422435
+      },
+      "hasMap": "https://maps.google.com/maps?cid=1234567890",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Genève",
+          "@id": "https://www.wikidata.org/wiki/Q71"
+        },
+        {
+          "@type": "Place",
+          "name": "Canton de Genève"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services Pare-brise et Vitrage Automobile",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Remplacement pare-brise",
+              "description": "Remplacement complet du pare-brise avec calibrage ADAS inclus. Garantie à vie sur l'installation.",
+              "provider": {
+                "@id": "https://parebrise-geneve-pro.ch/#business"
+              }
+            },
+            "price": "280",
+            "priceCurrency": "CHF",
+            "priceValidUntil": "2024-12-31",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Réparation impact pare-brise",
+              "description": "Réparation invisible des impacts et éclats. Intervention en 30 minutes."
+            },
+            "price": "89",
+            "priceCurrency": "CHF"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Calibrage caméra ADAS",
+              "description": "Recalibrage certifié des systèmes d'aide à la conduite toutes marques."
+            },
+            "price": "180",
+            "priceCurrency": "CHF"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rénovation phares",
+              "description": "Polissage professionnel des phares ternis. Garantie 3 ans."
+            },
+            "price": "120",
+            "priceCurrency": "CHF"
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "847",
+        "itemReviewed": {
+          "@id": "https://parebrise-geneve-pro.ch/#business"
+        }
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Marc Dubois"
+          },
+          "datePublished": "2024-01-15",
+          "reviewBody": "Impact réparé en 25 minutes chrono ! Service impeccable, je recommande vivement."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Sophie Müller"
+          },
+          "datePublished": "2024-01-20",
+          "reviewBody": "Remplacement pare-brise BMW avec calibrage ADAS parfait. Prix très correct pour Genève."
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/parebrisgenevepro",
+        "https://www.instagram.com/parebrisgenevepro",
+        "https://www.linkedin.com/company/parebrise-geneve-pro",
+        "https://www.youtube.com/@parebrisgenevepro"
+      ],
+      "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "TWINT", "Invoice"],
+      "currenciesAccepted": "CHF",
+      "knowsLanguage": ["fr", "en", "de", "it"],
+      "slogan": "Le N°1 du pare-brise à Genève - Intervention express, garantie à vie",
+      "foundingDate": "2015-03-15",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 12
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://parebrise-geneve-pro.ch/faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte un remplacement de pare-brise à Genève ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le prix d'un remplacement de pare-brise à Genève varie entre 280 et 800 CHF selon le modèle du véhicule, la présence de capteurs et la nécessité d'un calibrage ADAS. Un devis gratuit et précis est fourni en 2 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "L'assurance couvre-t-elle le remplacement du pare-brise ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, avec une assurance casco partielle ou complète, le remplacement du pare-brise est généralement couvert. La franchise varie entre 100 et 300 CHF selon votre contrat. Nous gérons toutes les démarches administratives avec votre assurance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps faut-il pour remplacer un pare-brise ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le remplacement complet prend environ 2 heures, incluant la dépose, la pose et le calibrage ADAS si nécessaire. Le véhicule doit rester immobilisé 3 heures au total pour respecter le temps de séchage de la colle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que le calibrage ADAS et est-il obligatoire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le calibrage ADAS (Advanced Driver Assistance Systems) est obligatoire sur les véhicules récents équipés de caméras dans le pare-brise. Il garantit le bon fonctionnement des aides à la conduite comme le freinage d'urgence ou l'alerte de franchissement de ligne."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on réparer un impact au lieu de remplacer le pare-brise ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un impact peut être réparé s'il fait moins de 2 cm de diamètre, n'est pas dans le champ de vision du conducteur et se trouve à plus de 6 cm du bord. La réparation coûte 89 CHF et prend 30 minutes."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://parebrise-geneve-pro.ch/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://parebrise-geneve-pro.ch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://parebrise-geneve-pro.ch/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Remplacement Pare-brise",
+          "item": "https://parebrise-geneve-pro.ch/services/remplacement-pare-brise-geneve"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://parebrise-geneve-pro.ch/#website",
+      "url": "https://parebrise-geneve-pro.ch",
+      "name": "PareBrise Genève Pro",
+      "description": "Le spécialiste n°1 du remplacement et de la réparation de pare-brise à Genève",
+      "publisher": {
+        "@id": "https://parebrise-geneve-pro.ch/#business"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://parebrise-geneve-pro.ch/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "fr-CH"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://parebrise-geneve-pro.ch/services/urgence-24h",
+      "serviceType": "Service d'urgence pare-brise 24/7",
+      "provider": {
+        "@id": "https://parebrise-geneve-pro.ch/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Genève"
+      },
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CHF",
+        "name": "Supplément urgence",
+        "description": "Aucun supplément pour les interventions d'urgence 24/7"
+      }
+    }
+  ]
+} 
