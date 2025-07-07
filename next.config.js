@@ -2,7 +2,9 @@
 const nextConfig = {
   experimental: {
     mdxRs: true,
+    outputFileTracingRoot: undefined,
   },
+  outputFileTracing: false,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   images: {
     domains: ['parebrise-peach.vercel.app'],

@@ -1,0 +1,12 @@
+node_modules/@swc/core*
+node_modules/@esbuild*
+node_modules/@next/swc*
+*.log
+.git/**
+scripts/**
+tests/**
+pages/**
+i18n/**
+cro-tracking/**
+accessibilite/**
+pwa/**
