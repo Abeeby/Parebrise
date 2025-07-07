@@ -55,14 +55,14 @@ export default async function LocalZonePage({ params }: PageProps) {
           <h2 className="text-2xl font-semibold mb-4">Services disponibles</h2>
           <ul className="list-disc list-inside space-y-2">
             <li>Remplacement de pare-brise toutes marques</li>
-            <li>Réparation d'impacts et fissures</li>
+            <li>Réparation d&apos;impacts et fissures</li>
             <li>Calibrage ADAS</li>
             <li>Service mobile à domicile</li>
           </ul>
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Zone d'intervention</h2>
+          <h2 className="text-2xl font-semibold mb-4">Zone d&apos;intervention</h2>
           <p className="text-lg mb-4">
             Nous intervenons rapidement à Carouge et dans les quartiers environnants:
           </p>
