@@ -1,0 +1,35 @@
+# Scripts de développement
+scripts/
+tests/
+
+# Documentation
+*.md
+!README.md
+
+# Fichiers de configuration locale
+.env.local
+.env.development
+
+# Cache et fichiers temporaires
+.next/cache
+*.log
+
+# Fichiers de développement
+playwright.config.ts
+exemple-page-accueil.html
+widgets-dynamiques.js
+styles-composants-ui.css
+site-parebrise-geneve-plan-complet.md
+schema-jsonld-complet.json
+nouvelle-arborescence-complete.md
+package-json-scripts.md
+calculateur-integration-readme.md
+commandes-seed.md
+
+# Dossiers non utilisés
+pages/
+pages-quartiers/
+i18n/
+cro-tracking/
+accessibilite/
+pwa/
