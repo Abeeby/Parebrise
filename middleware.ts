@@ -4,14 +4,15 @@ import type { NextRequest } from 'next/server'
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
   
-  // Simple redirect from root to /fr
+  // Check if the pathname is just '/' (root)
   if (pathname === '/') {
     return NextResponse.redirect(new URL('/fr', request.url))
   }
   
+  // Allow all other requests to pass through
   return NextResponse.next()
 }
 
 export const config = {
-  matcher: '/',
+  matcher: '/((?!api|_next/static|_next/image|favicon.ico).*)',
 }

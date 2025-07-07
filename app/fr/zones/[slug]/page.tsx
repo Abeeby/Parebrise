@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation';
 // Types
 interface PageProps {
   params: {
-    locale: string;
     slug: string;
   };
 }
@@ -13,15 +12,11 @@ interface PageProps {
 // Génération statique des routes
 export async function generateStaticParams() {
   // For now, just return Carouge as an example
-  const locales = ['fr', 'en', 'de'];
   const pages = ['pare-brise-carouge'];
   
-  return locales.flatMap(locale =>
-    pages.map(slug => ({
-      locale,
-      slug
-    }))
-  );
+  return pages.map(slug => ({
+    slug
+  }));
 }
 
 // Génération des métadonnées

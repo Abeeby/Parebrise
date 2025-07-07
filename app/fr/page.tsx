@@ -1,11 +1,4 @@
-import React from 'react'
-import Link from 'next/link'
-
-export default function LocaleHomePage({
-  params,
-}: {
-  params: { locale: string }
-}) {
+export default function FrenchHomePage() {
   return (
     <main className="min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
@@ -17,13 +10,13 @@ export default function LocaleHomePage({
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link 
-            href={`/${params.locale}/zones/pare-brise-carouge`}
+          <a 
+            href="/fr/zones/pare-brise-carouge"
             className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
           >
             <h2 className="text-2xl font-semibold mb-2">Carouge</h2>
             <p>Service de pare-brise à Carouge</p>
-          </Link>
+          </a>
         </div>
       </div>
     </main>
