@@ -132,7 +132,7 @@ const SERVICE_DURATIONS = {
 };
 
 // Garanties
-const WARRANTIES = {
+const WARRANTIES: Record<string, string> = {
   replacement: 'Garantie à vie',
   repair: 'Garantie 2 ans',
   adas: 'Certification constructeur',
@@ -170,7 +170,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const modelPrices = brandPrices[model.toLowerCase() as keyof typeof brandPrices];
+    const modelPrices = brandPrices[model.toLowerCase() as keyof typeof brandPrices] as 
+      | { replacement: number; repair: number; headlight: number }
+      | undefined;
+    
     if (!modelPrices) {
       return NextResponse.json(
         { 
@@ -183,7 +186,7 @@ export async function POST(request: NextRequest) {
 
     // Calculer le prix
     let basePrice = 0;
-    let estimatedTime = SERVICE_DURATIONS.replacement; // Par défaut
+    let estimatedTime: { text: string; min: number; max: number } = SERVICE_DURATIONS.replacement; // Par défaut
     const breakdown: any = {};
 
     // Prix de base selon le service
