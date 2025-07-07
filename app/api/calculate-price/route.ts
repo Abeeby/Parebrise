@@ -266,10 +266,12 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('Price calculation error:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Erreur inconnue';
     return NextResponse.json(
       { 
         success: false, 
-        error: 'Erreur lors du calcul du prix' 
+        error: 'Erreur lors du calcul du prix',
+        details: errorMessage
       },
       { status: 500 }
     );
