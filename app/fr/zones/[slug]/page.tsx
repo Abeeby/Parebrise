@@ -272,6 +272,78 @@ export default function LocalZonePage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Eco-Friendly Section */}
+      <section className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">🌱 Engagement écologique</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-4xl mb-3">♻️</div>
+                <h3 className="font-semibold mb-2">100% Recyclage</h3>
+                <p className="text-sm text-gray-600">
+                  Tous les pare-brises remplacés sont recyclés
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-4xl mb-3">🚗</div>
+                <h3 className="font-semibold mb-2">Flotte électrique</h3>
+                <p className="text-sm text-gray-600">
+                  50% de nos véhicules sont électriques
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-4xl mb-3">🌳</div>
+                <h3 className="font-semibold mb-2">1 arbre planté</h3>
+                <p className="text-sm text-gray-600">
+                  Pour chaque pare-brise remplacé
+                </p>
+              </div>
+            </div>
+            <div className="mt-8 bg-green-100 rounded-lg p-4 inline-block">
+              <p className="text-green-800 font-semibold">
+                🌍 Déjà 2,847 arbres plantés cette année!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Portal Access */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-xl p-8">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">🔐 Espace client sécurisé</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Historique complet des interventions</li>
+                    <li>• Factures téléchargeables</li>
+                    <li>• Garanties actives</li>
+                    <li>• Photos avant/après</li>
+                    <li>• Rappels d&apos;entretien</li>
+                  </ul>
+                </div>
+                <div className="text-center">
+                  <div className="bg-white rounded-lg p-6 shadow-lg">
+                    <input type="email" placeholder="Email" className="form-input mb-3" />
+                    <input type="password" placeholder="Mot de passe" className="form-input mb-4" />
+                    <button className="btn-primary w-full">
+                      Se connecter
+                    </button>
+                    <p className="text-sm text-gray-600 mt-3">
+                      Pas encore de compte? 
+                      <a href="#" className="text-blue-600"> Créer un compte</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Special Offers */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="container mx-auto px-4">

@@ -9,7 +9,87 @@
 
 ## 🚀 Fonctionnalités Implémentées
 
-### Page d'accueil
+### Nouvelles Fonctionnalités Innovantes (2ème vague)
+
+1. **🤖 Estimation IA par photo**
+   - Upload photo du dégât
+   - Analyse automatique par IA simulée
+   - Diagnostic instantané
+   - Estimation de prix et urgence
+
+2. **🎥 Consultation vidéo en direct**
+   - Diagnostic gratuit par vidéo
+   - Connexion avec technicien
+   - Interface d'appel intégrée
+   - Conseils en temps réel
+
+3. **🎁 Carte de fidélité digitale**
+   - Widget flottant (bouton cadeau)
+   - Points cumulés affichés
+   - Progression visuelle (5/8 services)
+   - Avantages et statut Gold
+
+4. **💰 Comparaison transparente des prix**
+   - 4 concurrents comparés
+   - Features détaillées
+   - Notre offre mise en avant
+   - Prix affichés clairement
+
+5. **⚠️ Alertes météo prévention**
+   - Bandeau d'alerte en haut
+   - Conseils de protection
+   - Fermeture possible
+   - Alertes gel/grêle
+
+6. **📊 Statistiques temps réel**
+   - Techniciens disponibles
+   - Interventions du jour
+   - Satisfaction instantanée
+   - Délai moyen actuel
+
+7. **🎯 Programme parrainage VIP**
+   - QR code personnel
+   - Gains jusqu'à 500 CHF
+   - Système de paliers
+   - Statut VIP après 10 parrainages
+
+8. **🤖 Assistant IA conversationnel**
+   - Chat simulé intégré
+   - Diagnostic par description
+   - Estimation automatique
+   - Interface conversationnelle
+
+9. **📱 Application mobile dédiée**
+   - Mockup visuel
+   - Features listées
+   - Boutons App Store/Play Store
+   - Suivi temps réel
+
+10. **♿ Accessibilité complète**
+    - Changement taille texte (A/A+/A++)
+    - Mode sombre
+    - Lecture vocale
+    - Options personnalisation
+
+11. **🔐 Garantie blockchain**
+    - 100% digitale
+    - Infalsifiable
+    - Transférable
+    - Technologie innovante
+
+12. **🌱 Engagement écologique**
+    - 100% recyclage
+    - Flotte électrique 50%
+    - 1 arbre planté/pare-brise
+    - Compteur d'arbres (2,847)
+
+13. **🔐 Espace client sécurisé**
+    - Login intégré
+    - Historique interventions
+    - Factures téléchargeables
+    - Photos avant/après
+
+### Page d'accueil (fonctionnalités initiales)
 1. **Calculateur de prix interactif**
    - Sélection du type de véhicule (citadine, berline, SUV)
    - Type de vitre (pare-brise, latérale, arrière)

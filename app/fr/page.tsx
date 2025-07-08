@@ -1,5 +1,13 @@
 'use client'
 import { useState } from 'react'
+import dynamic from 'next/dynamic'
+
+// Dynamic imports for client components
+const WeatherAlert = dynamic(() => import('@/components/WeatherAlert'), { ssr: false })
+const PriceEstimator = dynamic(() => import('@/components/PriceEstimator'), { ssr: false })
+const VideoConsultation = dynamic(() => import('@/components/VideoConsultation'), { ssr: false })
+const LoyaltyCard = dynamic(() => import('@/components/LoyaltyCard'), { ssr: false })
+const PriceComparison = dynamic(() => import('@/components/PriceComparison'), { ssr: false })
 
 export default function FrenchHomePage() {
   const [showCalculator, setShowCalculator] = useState(false)
@@ -18,6 +26,9 @@ export default function FrenchHomePage() {
 
   return (
     <>
+      {/* Weather Alert */}
+      <WeatherAlert />
+      
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20">
         <div className="container mx-auto px-4">
@@ -198,6 +209,20 @@ export default function FrenchHomePage() {
         </div>
       </section>
 
+      {/* Innovative Services Section */}
+      <section className="py-16 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Services innovants 🚀</h2>
+          <p className="text-center text-gray-600 mb-12">
+            Première entreprise en Suisse avec ces technologies
+          </p>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <PriceEstimator />
+            <VideoConsultation />
+          </div>
+        </div>
+      </section>
+
       {/* Insurance Partners */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -230,6 +255,40 @@ export default function FrenchHomePage() {
                 <span className="font-semibold text-slate-700">{brand}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Price Comparison */}
+      <PriceComparison />
+
+      {/* Digital Warranty Section */}
+      <section className="py-16 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">🔐 Garantie digitale blockchain</h2>
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-4xl mb-3">📱</div>
+                  <h3 className="font-semibold mb-2">100% Digital</h3>
+                  <p className="text-sm text-gray-600">Votre garantie toujours avec vous sur votre smartphone</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl mb-3">🔗</div>
+                  <h3 className="font-semibold mb-2">Infalsifiable</h3>
+                  <p className="text-sm text-gray-600">Technologie blockchain pour une sécurité maximale</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl mb-3">♾️</div>
+                  <h3 className="font-semibold mb-2">À vie</h3>
+                  <p className="text-sm text-gray-600">Transférable au nouveau propriétaire du véhicule</p>
+                </div>
+              </div>
+              <button className="btn-primary mt-6">
+                En savoir plus sur la garantie blockchain
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -319,8 +378,121 @@ export default function FrenchHomePage() {
         </div>
       </section>
 
+      {/* Real-time Stats */}
+      <section className="py-16 bg-slate-900 text-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Statistiques en temps réel</h2>
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="text-5xl font-bold mb-2 text-blue-400">3</div>
+              <p className="text-gray-300">Techniciens disponibles</p>
+              <p className="text-green-400 text-sm mt-1">● En ligne</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold mb-2 text-purple-400">12</div>
+              <p className="text-gray-300">Interventions aujourd&apos;hui</p>
+              <p className="text-sm mt-1 text-gray-400">Moyenne: 45 min</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold mb-2 text-green-400">98%</div>
+              <p className="text-gray-300">Satisfaction du jour</p>
+              <p className="text-sm mt-1 text-gray-400">Sur 24 avis</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold mb-2 text-orange-400">25min</div>
+              <p className="text-gray-300">Délai moyen actuel</p>
+              <p className="text-sm mt-1 text-gray-400">Zone: Genève</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Referral Program */}
+      <section className="py-16 bg-gradient-to-br from-orange-50 to-yellow-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-8">🎁 Programme de parrainage VIP</h2>
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-semibold mb-4">Gagnez jusqu&apos;à CHF 500.-</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <span className="text-green-500 text-xl">✓</span>
+                      <div>
+                        <strong>CHF 50.-</strong> pour vous et votre filleul
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-green-500 text-xl">✓</span>
+                      <div>
+                        <strong>Bonus x2</strong> après 5 parrainages
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-green-500 text-xl">✓</span>
+                      <div>
+                        <strong>Statut VIP</strong> après 10 parrainages
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="text-center">
+                  <div className="bg-gray-100 p-8 rounded-lg inline-block">
+                    <div className="w-48 h-48 bg-gray-300 mb-4"></div>
+                    <p className="text-sm text-gray-600">Votre QR code personnel</p>
+                  </div>
+                  <button className="btn-primary mt-4">
+                    Obtenir mon QR code
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Assistant */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="text-3xl font-bold mb-4">🤖 Assistant IA PareBrise</h2>
+                  <p className="mb-6">
+                    Notre assistant intelligent répond à toutes vos questions 24/7
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Diagnostic automatique par description</li>
+                    <li>• Estimation de prix instantanée</li>
+                    <li>• Prise de RDV assistée</li>
+                    <li>• Conseils personnalisés</li>
+                  </ul>
+                </div>
+                <div className="bg-white/10 backdrop-blur rounded-lg p-6">
+                  <div className="space-y-3">
+                    <div className="bg-white/20 rounded-lg p-3 text-sm">
+                      <p className="font-semibold mb-1">Vous:</p>
+                      <p>J&apos;ai un impact sur mon pare-brise</p>
+                    </div>
+                    <div className="bg-white/20 rounded-lg p-3 text-sm">
+                      <p className="font-semibold mb-1">Assistant IA:</p>
+                      <p>Je comprends. Pouvez-vous me dire la taille de l&apos;impact? Est-il plus grand qu&apos;une pièce de 2 CHF?</p>
+                    </div>
+                  </div>
+                  <button className="btn-primary bg-white text-blue-600 hover:bg-gray-100 w-full mt-4">
+                    Démarrer une conversation
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
-      <section className="py-16 bg-white" id="faq">
+      <section className="py-16 bg-gray-50" id="faq">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-12">Questions fréquentes</h2>
           <div className="space-y-4">
@@ -397,6 +569,93 @@ export default function FrenchHomePage() {
         </div>
       </section>
 
+      {/* Mobile App Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">📱 Application mobile PareBrise Pro</h2>
+                <p className="text-gray-600 mb-6">
+                  Gérez tout depuis votre smartphone
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Suivi en temps réel de votre réparation</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Historique complet des interventions</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Carte de fidélité digitale</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Notifications push pour les offres</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Paiement sécurisé intégré</span>
+                  </li>
+                </ul>
+                <div className="flex gap-4 mt-6">
+                  <button className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-2">
+                    <span>🍎</span> App Store
+                  </button>
+                  <button className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-2">
+                    <span>🤖</span> Google Play
+                  </button>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="bg-gray-100 rounded-3xl p-8 inline-block">
+                  <div className="w-64 h-96 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center">
+                    <span className="text-white text-6xl">📱</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Accessibility Options */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">♿ Accessibilité et personnalisation</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-3xl mb-3">🔍</div>
+                <h3 className="font-semibold mb-2">Taille du texte</h3>
+                <div className="flex gap-2 justify-center">
+                  <button className="px-3 py-1 bg-gray-200 rounded text-sm">A</button>
+                  <button className="px-3 py-1 bg-blue-500 text-white rounded">A+</button>
+                  <button className="px-3 py-1 bg-gray-200 rounded text-lg">A++</button>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-3xl mb-3">🌓</div>
+                <h3 className="font-semibold mb-2">Mode sombre</h3>
+                <button className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm">
+                  Activer
+                </button>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-3xl mb-3">🗣️</div>
+                <h3 className="font-semibold mb-2">Lecture vocale</h3>
+                <button className="px-4 py-2 bg-green-500 text-white rounded-full text-sm">
+                  Écouter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center" id="devis">
         <div className="container mx-auto px-4">
@@ -420,6 +679,9 @@ export default function FrenchHomePage() {
           </p>
         </div>
       </section>
+
+      {/* Loyalty Card Widget */}
+      <LoyaltyCard />
     </>
   )
 }
